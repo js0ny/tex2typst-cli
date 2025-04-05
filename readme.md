@@ -30,10 +30,10 @@ tex2typst-cli --input typst "e eq.def lim_(n arrow.r infinity)(1 + frac(1, n))^n
 
 # Use a file as input (prepend @ to the filename)
 tex2typst-cli @input.tex
-tex2typst-cli --input typst @input.typst
+tex2typst-cli --input typst @input.typ
 
 # Output to a file
-tex2typst-cli --output output.typst "e \overset{\text{def}}{=} \lim_{{n \to \infty}} \left(1 + \frac{1}{n}\right)^n"
+tex2typst-cli --output output.typ "e \overset{\text{def}}{=} \lim_{{n \to \infty}} \left(1 + \frac{1}{n}\right)^n"
 ```
 
 ## Options
