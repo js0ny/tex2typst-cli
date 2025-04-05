@@ -1,0 +1,34 @@
+{
+  "name": "tex2typst-cli",
+  "version": "1.0.0",
+  "description": "CLI tool to convert between TeX and Typst notation",
+  "main": "dist/tex2typst-cli.js",
+  "bin": {
+    "tex2typst-cli": "./dist/tex2typst-cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/tex2typst-cli.js",
+    "dev": "ts-node src/tex2typst-cli.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "tex",
+    "typst",
+    "latex",
+    "conversion",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "tex2typst": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
